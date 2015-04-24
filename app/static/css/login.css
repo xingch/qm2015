@@ -1,0 +1,102 @@
+.l-banner {
+  
+  height: 480px;
+}
+.l-form {
+  display: inline-block;
+  margin-top:92px;
+  padding: 25px 30px;
+  position:absolute;
+  left:50%;
+  z-index:2;
+  margin-left:140px;
+  word-spacing: 5px;
+  background: rgba(0, 0, 0, .6); 
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #99000000, endColorstr = #99000000)\9;
+}
+:root .l-form{filter: none; /*for IE9*/} 
+.l-form h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "微软雅黑";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.l-form label {
+  color: #666666;
+  font-size: 12px;
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+}
+.l-form li {
+  margin-bottom: 15px;
+}
+.l-form .l-text-box {
+  padding:7px 9px;
+  font-size: 14px;
+  width: 223px;
+  line-height: 20px;
+  float: left;
+  border: 0px;
+}
+.l-form .shorter {
+  width: 148px;
+}
+.por{ position:relative;}
+.l-form .labelFor-pwd{top:0px; width:auto; position:absolute;left:45px; color:#999; font-size:14px; line-height:34px;}
+.input-wrap{ background-color:#fff; border:1px solid #ccc; width:278px; height:34px;}
+.input-ico,.rank-ico{background:url(../images/all-ico.png) no-repeat;}
+.input-ico{ width:36px;float: left; height:20px; border-right:1px solid #ccc; border-left:0px; margin:0px; margin-top:7px;}
+.input-ico1{ background-position:8px -182px;}
+.input-ico2{ background-position:8px -255px;}
+.fn-fnone{ float: none;}
+.c-link-white{ color: #fff;}
+.c-link-white:hover{color: #fff;}
+.l-form .verify-text{ width:141px; border:1px solid #ccc;}
+.login-btn{ font-size:14px;padding: 0.62em 2em;}
+
+.news-info-wrap{ background-color:#ececec;}
+.news-info{ width:960px;margin:0 auto; padding:48px 0;}
+.news-box{ width:185px; height:199px; margin-right:20px; display:inline; background-color:#fff; padding: 23px 20px; float: left;}
+.chart-box{ width:225px; height:199px; padding: 23px 0px;}
+.plr15{ padding:0 15px;}
+.plr10{ padding:0 10px;}
+.news-box-shadow{box-shadow:0 0 15px rgba(0, 0, 0, .3) }
+.infor-tit{font:bold 18px/24px \5FAE\8F6F\96C5\9ED1; color:#666;}
+.rank-list{ height:180px;}
+.scroll-area,.scroll-area2{height:180px; overflow:hidden;}
+.rank-list li{ line-height:28px; height:30px; color:#666;}
+.rank-ico{ background-position:0 -88px;display: inline-block; width: 20px; height: 20px; vertical-align: middle; margin-right:9px; line-height: 20px;font-family:\5FAE\8F6F\96C5\9ED1;  text-align: center; }
+.height-rank{ background-position:0 0;color: #fff;}
+.news-more{ font-weight:normal; font-size:16px; color:#666;}
+.news-more:hover{color:#666; text-decoration:underline;}
+.mr0{ margin-right:0px;}
+.notice-list{ height:180px; overflow:hidden;}
+.notice-list li{ line-height:30px;}
+.news-link{width: 150px;display: block;float: left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; color: #666;}
+.news-link:hover{ color: #bf1e2d;}
+.news-date{ color: #ccc; float: right;}
+
+
+/**new banner**/
+.slides_control {height: 480px;}
+.slideList { height: 480px;position: relative; width: 100%;overflow: hidden; z-index: 1;}
+.slideList li.item { display: block;height: 480px;left: 0;position: absolute;top: 0;width: 100%;}
+.slideList .slideImg1 {background: url("img/load.gif") no-repeat scroll center #e6e5d7;}
+.slideList .slideImg2 {background: url("img/load.gif") no-repeat scroll center #e1f3f3;}
+.slideList .slideImg3 {background: url("img/load.gif") no-repeat scroll center #e1f3f3;}
+.slideList .slideImg4 {background: url("img/load.gif") no-repeat scroll center #e1f3f3;}
+.slideList .slideImg5 {background: url("img/load.gif") no-repeat scroll center #e1f3f3;}
+.slideList .slideImg7 {background: url("img/load.gif") no-repeat scroll center #e1f3f3;}
+.slideList a{
+  display: block;
+  height: 480px;
+  width: 100%;
+}
+/*点轮播*/
+.bgnum ul {margin: 0 auto;overflow: hidden;padding-top: 10px;}
+.bgnum li {display: inline;float: left;margin: 0 7px;}
+.bgnum li a {cursor: pointer; background:url(img/ad2.jpg);display: block;height: 12px;overflow: hidden;text-indent: -9999em;width: 12px;}
+.bgnum li a.on,
+.bgnum li a:hover{ background:url(img/ad4.jpg);display: block;height: 12px;overflow: hidden;text-indent: -9999em;width: 12px;}

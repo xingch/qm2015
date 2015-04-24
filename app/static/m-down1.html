@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>财源宝</title>
+	<meta charset="utf-8">
+
+
+<link rel="stylesheet" type="text/css" href="css/commom.css">
+<link rel="stylesheet" type="text/css" href="css/m-down.css">
+<script type="text/javascript">
+    //仅以百度云测试
+        // 获取终端的相关信息
+        var Terminal = {
+            // 辨别移动终端类型
+            platform : function(){
+                var u = window.navigator.userAgent, app = navigator.appVersion;
+                return {
+                    // android终端或者uc浏览器
+                    android: (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) && u.indexOf('MicroMessenger')<=0,
+                    // 是否为iPhone或者QQHD浏览器
+                    iPhone: u.indexOf('iPhone') > -1 ,
+                    // 是否iPad
+                    iPad: u.indexOf('iPad') > -1,
+					// 是否是通过微信的扫一扫打开的
+//                    weChat: u.indexOf('MicroMessenger') > 0
+					weChat: function (){
+					    var ua = window.navigator.userAgent.toLowerCase();
+					    if(u.match(/MicroMessenger/i) == 'micromessenger'){
+					        return true;
+					    }else{
+					        return false;
+					    }
+					}
+                };
+            }(),
+            // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
+            language : (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+    
+        // 根据不同的终端，跳转到不同的地址
+        var theUrl = '';
+        if(Terminal.platform.android){
+            theUrl = 'http://bcscdn.baidu.com/netdisk/BaiduYun_3.6.0.apk';
+        }else if(Terminal.platform.iPhone){
+            theUrl = 'http://itunes.apple.com/cn/app/bai-du-wang-pan/id547166701?mt=8';
+        }else if(Terminal.platform.iPad){
+            // 还可以通过language，区分开多国语言版
+			theUrl = 'http://itunes.apple.com/cn/app/bai-du-wang-pan/id547166701?mt=8';           
+        }else if(Terminal.platform.weChat){
+			theUrl = location.href;
+			alert("微信不支持下载哦，请选择右上角，在浏览器中打开！");
+        }
+    
+        location.href = theUrl;
+</script>  
+</head>
+<body>
+
+<!-- top -->
+<div class="top-toolbar-wrap">
+	<div class="top-toolbar fn-clear">
+		<ul class="c-top-l-list">
+			<li>
+				<a target="_blank" class="qq-kefu png" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2898109485&amp;site=qq&amp;menu=yes">官方客服</a>
+			</li>
+			<li><a href="http://weibo.com/u/3977658375" class="weibo-kefu png" target="_blank">官方微博</a></li>
+		</ul>
+		<div class="c-top-r">
+			<a class="right-m-ico" href="/">移动客户端</a>
+            <a class="right_a" href="/">登录</a>
+            <span class="c-del">|</span>
+            <a class="right_a" href="/member/common/register/">注册</a>
+        </div>
+	</div>	
+</div>
+
+
+<!-- end top -->
+
+<!-- main star -->
+<div class="d-b-wrap">
+	<div class="d-banner fn-clear">
+		<div class="d-b-right fn-clear">
+			<div class="erweima"><img src="images/erweima.png" alt="" width="200" height="200"></div>
+			<div class="d-btn-box">
+				<a href="#" class="d-btn d-btn-Android" title="Android 版下载">Android 版下载</a>
+				<a href="#" class="d-btn d-btn-iPhone" title="iPhone 版下载">iPhone 版下载</a>
+			</div>
+		</div>
+	</div>	
+</div>
+<div class="d-adv fn-clear">
+	<div class="d-adv-l">
+		<h2>收益关注 随时随地</h2>
+		<h3>收益和资金情况，掏出手机立马知晓</h3>	
+		<ul class="d-adv-list fn-clear">
+			<li>
+				<span class="d-adv-ico d-adv-ico1"></span>
+				<p class="d-adv-txt">万份收益</p>
+			</li>
+			<li>
+				<span class="d-adv-ico d-adv-ico2"></span>
+				<p class="d-adv-txt">累计收益</p>
+			</li>
+			<li>
+				<span class="d-adv-ico d-adv-ico3"></span>
+				<p class="d-adv-txt">周收益</p>                
+			</li>
+			<li>
+				<span class="d-adv-ico d-adv-ico4"></span>
+				            
+			</li>
+		</ul>
+	</div>
+	<div class="d-adv-r">
+		<img src="images/m-down-pic1.jpg" alt="收益关注 随时随地" width="530" height="239">
+	</div>
+	
+</div>
+<div class="d-block3">
+	<div class="d-block3c">
+		<h2>注册认证 一手搞定</h2>
+		<h3>注册和身份认证，一个手机轻松搞定</h3>
+		<a href="#" class="gotop-btn" title="立即体验">立即体验</a>
+	</div>
+</div>
+<!--end main -->
+<div class='c-footer'>
+  <p>
+  	  <span class="f-c-666">客服热线：400-008-8166, 0451-82373105, 0451-82373106&nbsp;&nbsp;服务邮箱：SERVICE@CYBP2C.COM&nbsp;&nbsp;</span>
+	  <span class="f-c-999">ICP备案证：<a target="_blank" href="http://www.miitbeian.gov.cn" style="color:rgb(152, 152, 152)">黑ICP备13003922号-2</a></span> 
+	  
+  </p>
+  <p classs="f-c-999">
+	COPYRIGHT©2013-<?php echo date('Y')?> CYBP2C.COM ALL RIGHTS RESERVED&nbsp;&nbsp;财源宝公司 版权所有 
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb6a8535df4b45e6ce174fe365515e592' type='text/javascript'%3E%3C/script%3E"));
+	  </script>
+	  <script language="javascript" type="text/javascript" src="http://js.users.51.la/17023654.js"></script>
+      <noscript><a href="http://www.51.la/?17023654" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17023654.asp" style="border:none" /></a></noscript>
+      </p>
+</div>
+
+</body>
+</html>

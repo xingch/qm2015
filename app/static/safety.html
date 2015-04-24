@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>财源宝</title>
+	<meta charset="utf-8">
+  <!-- <link rel="stylesheet/less" type="text/css" href="css/commom.less"> -->
+  <!-- <link rel="stylesheet/less" type="text/css" href="css/member.less"> 
+     <script type="text/javascript" src= '../js/less.js'></script> -->
+
+
+ <link rel="stylesheet" type="text/css" href="css/commom.css">
+  <link rel="stylesheet" type="text/css" href="css/member.css"> 
+  
+</head>
+<body>
+
+<!-- top -->
+<div class="c-top-gray">
+    <div class="c-wrap clearfix">
+    	    <a href="http://betarry.cybp2c.com" class="logo-link"><h1 style="margin-top: 8px;">日日盈</h1></a>
+    	    	<div class="nav-wrap">
+    		<ul class="nav-list fn-clear" id="nav">
+    			<li><a href="http://wl.hqb.cybp2c.com">我的账户</a></li> 
+    			<li><a href="http://wl.hqb.cybp2c.com/www/site/aboutus#aboutCon">认识我</a></li>
+    			<li><a href="/static/newer.html">新手必读</a></li>
+    			<li><a href="/static/safety.html">理财安全</a></li>
+    			<li><a href="/www/notice/list">网站公告</a></li>
+    			<li><a href="/www/help/index">帮助中心</a></li>
+    			<li><a href="http://www.cybp2c.com/" target="_blank">财源宝</a></li>	
+    				  
+    		</ul>
+    	</div>
+    </div>
+</div>
+<!-- end top -->
+
+<!-- main wrapper -->
+<div class='clear content-wrap'>
+	<div class="warp-pad">
+		<h2 class="safety-t">五重保障为用户的资金保驾护航</h2>
+		<div class="safety-bg">
+			<div class="safety-temp safety-temp1 safety-ltemp">
+				<h3 class="safety-tit tar">债务人反担保</h3>
+				<p>小额贷款公司为了降低自身的风险，要求债务人提供足额的还款措施，并进行全程项目监控，确保了小额贷款公司自身的安全，同时也提升了债权人的保障性。</p>
+			</div>
+			<div class="safety-temp safety-temp2 safety-rtemp">
+				<h3 class="safety-tit tal">债权产品严格审查风控</h3>
+				<p>财源宝公司联合小额贷款公司对债务人资质和偿还能力进行严格的审查，确保债务人均达到或超过平台的准入标准。</p>
+			</div>
+			<div class="safety-temp safety-temp3 safety-ltemp">
+				<h3 class="safety-tit tar">财源宝风险回购</h3>
+				<p>以上多重措施已将投资人资金风险降至相当低的水平。财源宝为投资人利益着想，让风险降低到零，如出现极端情况导致以上多项安全措施下投资人资金受到威胁，财源宝将承担起回购责任，向投资人回购债权。</p>
+			</div>
+			<div class="safety-temp safety-temp4 safety-rtemp">
+				<h3 class="safety-tit tal">小额贷款公司回购垫付</h3>
+				<p>如债务人到期未还款，小额贷款公司将按照约定代为垫付本金和收益，自行向债务人追索，确保投资人的资金安全。</p>
+			</div>
+			<div class="safety-temp tac safety-temp5 safety-btemp">
+				<h3 class="safety-tit">其他应收债权抵押</h3>
+				<p>财源宝为了降低投资人的风险要求小额贷款<br />公司足额提供其他应收债权做抵押。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end main -->
+
+
+
+<div class='c-footer'>
+  <p>
+  	  <span class="f-c-666">客服热线：400-008-8166, 0451-82373105, 0451-82373106&nbsp;&nbsp;服务邮箱：SERVICE@CYBP2C.COM&nbsp;&nbsp;</span>
+	  <span class="f-c-999">ICP备案证：<a target="_blank" href="http://www.miitbeian.gov.cn" style="color:rgb(152, 152, 152)">黑ICP备13003922号-2</a></span> 
+	  
+  </p>
+  <p classs="f-c-999">
+	COPYRIGHT©2013-<?php echo date('Y')?> CYBP2C.COM ALL RIGHTS RESERVED&nbsp;&nbsp;财源宝公司 版权所有 
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb6a8535df4b45e6ce174fe365515e592' type='text/javascript'%3E%3C/script%3E"));
+	  </script>
+	  <script language="javascript" type="text/javascript" src="http://js.users.51.la/17023654.js"></script>
+      <noscript><a href="http://www.51.la/?17023654" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17023654.asp" style="border:none" /></a></noscript>
+      </p>
+</div>
+<script type="text/javascript" language="javascript">
+	var nav = document.getElementById("nav");
+	var links = nav.getElementsByTagName("li");
+	var lilen = nav.getElementsByTagName("a");
+	var currenturl = document.location.href;
+	var last = 0;
+	for (var i=0;i<links.length;i++){	
+		var linkurl = lilen[i].getAttribute("href");
+		if(currenturl.indexOf(linkurl)!=-1){		
+			last = i;
+		}
+	}
+	links[last].className = "nav-current";
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>财源宝</title>
+	<meta charset="utf-8">
+<!--   <link rel="stylesheet/less" type="text/css" href="css/commom.less">
+  <link rel="stylesheet/less" type="text/css" href="css/member.less"> 
+    <script type="text/javascript" src= '../js/less.js'></script>
+ -->
+
+ <link rel="stylesheet" type="text/css" href="css/commom.css">
+  <link rel="stylesheet" type="text/css" href="css/member.css"> 
+  
+  <script type="text/javascript" src='js/jquery.js'></script>
+  <script type="text/javascript" src='js/DLD.min.js'></script>
+</head>
+<body>
+
+<!-- top -->
+<div class='c-top-gray'>
+    <div class='c-wrap'><h1>活期宝</h1></div>
+</div>
+<!-- end top -->
+
+<!-- main wrapper -->
+<div class='c-wrap clear'>
+
+  <!---left menu-->
+  <div class='mb-menu'>
+    <ul class='mb-manu-list'>
+      <li class='selected'><a class='mb-account-icon1' href="#">账户首页</a></li>
+      <li><a class='mb-account-icon2' href="#">资金明细</a></li>
+      <li><a class='mb-account-icon3' href="#">会员信息</a></li>
+      <li><a class='mb-account-icon4' href="#">银行卡</a></li>
+      <li><a class='mb-account-icon5' href="#">修改密码</a></li>
+      <li><a class='mb-account-icon6' href="#">安全退出</a></li>
+    </ul>
+  </div>
+ <!---left menu end-->
+
+
+
+<!--right content-->
+		<div class='mb-r-content'>
+			<h2 class='mb-title2'>提升安全性</h2>
+			<div class='mb-border-wrap'>
+				<strong>设置提现密码</strong>
+				<p class='mb-gray-word'>提现(赎回)之前用到</p>
+				<div class='right-panel'><a class='c-red-btn' data-action='show_win'  data-tpl='txTpl'>设&nbsp;置</a></div>
+			</div>		
+			<div class='mb-border-wrap'>
+				<strong>上传身份证复印件</strong>
+				<p class='mb-gray-word'>提现之前必须上传</p>
+				<div class='right-panel' ><a class='c-red-btn' >上&nbsp;传</a></div>
+			</div>		
+			<div class='mb-border-wrap'>
+				<strong>上传身份证复印件</strong>
+				<p class='mb-gray-word'>提现之前必须上传</p>
+				<div class='right-panel' ><span class='c-icon-ok2'></span></div>
+			</div>		
+    </div>
+<!--end right -->
+	</div>
+<!--end main -->
+
+
+
+<div class='c-footer'>
+  <p>
+  <a href='#'>关于活期宝</a><span class='c-del'>|</span><a href='#'>意见反馈</a><span class='c-del'>|</span><a href='#'>联系我们</a><span class='c-del'>|</span><a href='#'>服务协议</a>   <span>黑ICP备13003922号-2</span></p>
+  <p>
+客服热线：400-008-8166，服务邮箱：service@cybp2c.com Copyrightb©2013-2014 All Rights Reserved
+</p>
+</div>
+
+<script type="text/template" id='txTpl'>
+				<ul class='mb-list1'>
+							<li><label>提现密码:</label><input type='text' size='8' class='mb-tx200'></li>
+							<li><label>密码确认:</label><input type='text' size='8' class='mb-tx200'></li>
+						    <li><a href='#' class='c-red-btn'>设&nbsp;置</a></li>
+
+				</ul>
+</script>
+<script type="text/javascript">
+
+	(function(){
+		var win =new DLD.widgets.window({ content:$("#txTpl").html(),
+			simpleWindow:{
+				title : "这个标题",
+				content : "这个内容"
+			}
+		 } );
+	win.getSimpleContent("提现密码",$("#txTpl").html());
+   	 win.show();
+	
+		  DLD.addEvent("click"  , "show_win" , function(){
+        console.log("#"+this.getAttribute('data-tpl'));
+         var tpl = $("#"+this.getAttribute('data-tpl')).html();
+	   		win.open(tpl);
+		  });
+
+
+	   })();
+</script>
+</body>
+</html>

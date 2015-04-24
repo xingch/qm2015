@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>财源宝</title>
+	<meta charset="utf-8">
+  <link rel="stylesheet/less" type="text/css" href="css/commom.less">
+  <link rel="stylesheet/less" type="text/css" href="css/member.less"> 
+    <script type="text/javascript" src= '../js/less.js'></script>
+
+
+<!--  <link rel="stylesheet" type="text/css" href="css/commom.css">
+  <link rel="stylesheet" type="text/css" href="css/member.css">  -->
+  
+  <script type="text/javascript" src='js/jquery.js'></script>
+  <script type="text/javascript" src='js/DLD.min.js'></script>
+</head>
+<body>
+
+<!-- top -->
+<div class='c-top-gray'>
+    <div class='c-wrap'><h1>活期宝</h1></div>
+</div>
+<!-- end top -->
+
+<!-- main wrapper -->
+<div class='c-wrap clear'>
+
+  <!---left menu-->
+  <div class='mb-menu'>
+    <ul class='mb-manu-list'>
+      <li class='selected'><a class='mb-account-icon1' href="#">账户首页</a></li>
+      <li><a class='mb-account-icon2' href="#">资金明细</a></li>
+      <li><a class='mb-account-icon3' href="#">会员信息</a></li>
+      <li><a class='mb-account-icon4' href="#">银行卡</a></li>
+      <li><a class='mb-account-icon5' href="#">修改密码</a></li>
+      <li><a class='mb-account-icon6' href="#">安全退出</a></li>
+    </ul>
+  </div>
+ <!---left menu end-->
+
+
+
+<!--right content-->
+		<div class='mb-r-content'>
+			<h2 class='mb-title2'>修改密码</h2>
+			
+			<div class='mb-tab-wrap'>
+
+				<ul class='mb-tab' id='mb_tab'>
+					<li class='selected'><a href='javascript:void(0)'>修改登录密码</a></li>
+					<li ><a href='javascript:void(0)'>修改提现密码</a></li>
+				</ul>
+
+				<div class='mb-tab-wrap tab_content'>
+					<ul class='mb-list1'>
+						<li><label>旧密码:</label><input type='text' size='8' class='mb-tx200'></li>
+						<li><label>新密码:</label><input type='text' size='8' class='mb-tx200'><strong class='mb-invalid'>两次密码输入不一致</strong></li>
+						<li><label>新密码确认:</label><input type='password' size='8' class='mb-tx200'><strong class='mb-valid'>验证通过</strong></li>
+						<li><a href='#' class='c-red-btn'>修&nbsp;改</a></li>
+					</ul>
+				</div>
+
+				<div class='mb-tab-wrap tab_content' >
+					<ul class='mb-list1'>
+						<li><label>旧密码:</label><input type='text' size='8' class='mb-tx200'></li>
+						<li><label>新密码:</label><input type='text' size='8' class='mb-tx200'></li>
+						<li><label>新密码确认:</label><input type='password' size='8' class='mb-tx200'></li>
+						<li><a href='#' class='c-red-btn'>修&nbsp;改</a></li>
+					</ul>
+				</div>
+
+			</div>
+		
+    </div>
+<!--end right -->
+	</div>
+<!--end main -->
+<script type="text/javascript">
+
+		var tab = new DLD.widgets.Tab(
+					document.getElementById("mb_tab"),
+					{
+						className : "selected" ,
+           				contents:$(".tab_content"),
+						onSelect : {
+							"1" : function( obj ){
+ 
+								}
+							},
+						init: function(){
+							this.select(0);
+						}
+					});
+
+</script>
+
+
+<div class='c-footer'>
+  <p>
+  <a href='#'>关于活期宝</a><span class='c-del'>|</span><a href='#'>意见反馈</a><span class='c-del'>|</span><a href='#'>联系我们</a><span class='c-del'>|</span><a href='#'>服务协议</a>   <span>黑ICP备13003922号-2</span></p>
+  <p>
+客服热线：400-008-8166，服务邮箱：service@cybp2c.com Copyrightb©2013-2014 All Rights Reserved
+</p>
+</div>
+
+</body>
+</html>

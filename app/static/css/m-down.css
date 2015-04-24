@@ -1,0 +1,26 @@
+.d-b-wrap{ background: #d85454; height: 550px;}
+.d-banner{ width: 960px; margin: 0 auto;height: 550px; background: url('../images/m-down-banner.jpg') no-repeat;}
+.d-b-right{ width: 454px; float: right; padding-top: 281px;}
+.erweima{ float: left;}
+.d-btn-box{ float: left;padding-left: 30px; padding-top: 78px;}
+.d-btn{background: url('../images/m-down-btn.png') no-repeat; width: 118px; height: 50px; padding-left: 52px; color: #666;  font:14px/47px \5FAE\8F6F\96C5\9ED1;display:block;}
+.d-btn-Android{ background-position: 0 0 ; margin-bottom: 22px;}
+.d-btn-iPhone{ background-position: 0 -72px;}
+
+.d-adv{ width: 960px; margin: 0 auto; padding: 85px 0}
+.d-adv-l{ float: left; padding-top: 30px;}
+.d-adv-r{ float: right; width: 530px;}
+.d-adv-l h2,.d-block3c h2{ font:42px/65px \5FAE\8F6F\96C5\9ED1; color: #666 }
+.d-adv-l h3,.d-block3c h3{ font:18px/26px \5FAE\8F6F\96C5\9ED1;color: #666 }
+.d-adv-list{ margin-top: 22px;}
+.d-adv-list li{ text-align: center; width: 62px; float: left;display: inline; margin-right: 13px;}
+.d-adv-ico{background: url('../images/m-down-ico.png') no-repeat; display: inline-block;*zoom:1;_display: inline; width: 36px; height: 30px;}
+.d-adv-ico1{background-position: 0 4px;}
+.d-adv-ico2{background-position: 0 -79px;}
+.d-adv-ico3{background-position: 0 -152px;}
+.d-adv-ico4{background-position: 0 -238px; width: 47px; height: 10px; margin-top: 38px;}
+.d-adv-txt{font:12px/24px \5FAE\8F6F\96C5\9ED1;color: #666;}
+
+.d-block3{ background: #f5f5f5;}
+.d-block3c{background: url('../images/m-down-pic2.jpg') no-repeat 0 bottom; padding:105px 0 0 506px; height: 315px; width: 454px; margin: 0 auto}
+.gotop-btn{display:block;width: 104px; height: 59px;background: url('../images/m-down-btn.png') no-repeat 0 -148px;  font:18px/59px \5FAE\8F6F\96C5\9ED1;padding-left: 66px; color: #666;margin-top: 47px;}

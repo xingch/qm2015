@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>财源宝</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/commom.css">
+<link rel="stylesheet" type="text/css" href="css/member.css">
+<script src="js/jquery.js"></script>
+</head>
+<body>
+<!-- top -->
+<div class='c-top-gray'>
+	<div class='c-wrap'>
+		<h1><span class="line-span"></span>收银台</h1>
+	</div>
+</div>
+<!-- end top -->
+<!-- main wrapper -->
+<div class="c-wap">
+	<div class='mb-checkout'>
+		<ul class="clearfix">
+			<li class="active" >网银支付</li>
+			<li class="normal">银行代扣（无需网银）</li>
+		</ul>
+		<div id="eBank">
+			<p>请输入购买金额（元）</p>
+			<p class="mt0"><input type="text" name="" class="inputText"></p>
+			<p>请选择支付渠道</p>
+			<p class="mt0"><input type="radio"> <img src="images/bank/chinabank.gif"></p>
+			<p><button type="button" class="mb-checkout-btn">下一步</button></p>
+		</div>
+		<div id="depositBank" class="none">
+			<p class="bankNote none">
+				<span>您需要完成如下任务才能使用该功能</span><br>
+				<span style="display:inline-block;width:120px;">*完成实名认证</span><a href="">现在去认证>></a><br>
+				<span style="display:inline-block;width:120px;">*完善银行卡信息</span><a href="">现在去完善>></a>
+			</p>
+			<div class="purchase none">
+				<p>请输入购买金额（元）</p>
+				<p class="mt0"><input type="text" name="" class="inputText"> &nbsp;&nbsp;请确认您的银行卡余额足够</p>
+				<p>扣款银行卡：<span class="font-bold">12563652365256（工商银行）</span></p>
+				<p style="margin-top: 10px;"><input type="checkbox"> 我已经阅读并同意<span class="font-blue">《代扣协议书》</span></p>
+				<p class="mt0"><button type="button" class="mb-checkout-btn">提交</button></p>
+				<p class="mt0"><span class="font-blue">代扣记录 >> </span>工作日16:00之前申请，当天完成扣款。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end main -->
+<div class='c-footer'>
+	<p>
+		<a href='#'>关于活期宝</a>
+		<span class='c-del'>|</span>
+		<a href='#'>意见反馈</a>
+		<span class='c-del'>|</span>
+		<a href='#'>联系我们</a>
+		<span class='c-del'>|</span>
+		<a href='#'>服务协议</a>
+		<span>黑ICP备13003922号-2</span></p>
+	<p> 客服热线：400-008-8166，服务邮箱：service@cybp2c.com Copyrightb©2013-2014 All Rights Reserved </p>
+</div>
+</body>
+<script>
+var idCheck = 0;
+$(function() {
+	$(".mb-checkout li").mouseenter(function() {
+		$(this).removeClass("normal").addClass("active").siblings().removeClass("active").addClass("normal");
+		if ($(this).index() == 0) {
+			$("#eBank").removeClass("none").next().addClass("none");
+		} else {
+			$("#depositBank").removeClass("none");
+			$("#eBank").addClass("none");
+			if (idCheck == 1) {
+				$(".purchase").removeClass("none");
+			} else {
+				$(".bankNote").removeClass("none");
+			}
+		}
+	})
+})
+</script>
+</html>
